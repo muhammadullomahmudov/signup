@@ -20,71 +20,74 @@ elForm.addEventListener('submit', function (e) {
         elName.classList.add('false');
         elText.textContent = "Aka Ismingiz kamida 3talik bo'lishi kerak";
         elText.classList.add('danger')
+
     }
-    else  {
+    else {
         elName.classList.add('false');
         elText.textContent = "";
-        elName.classList.add('true');
-        elText.classList.remove('danger')
+        elText.classList.remove('danger');
 
+        elName.classList.remove("false");
     }
 
 
-    if(elPassword.value.trim().length < 'qwertyui'.length ) {
-
+    if (elPassword.value.trim().length < 'qwertyui'.length) {
         elPassword.classList.add('false');
         elText1.textContent = "Aka paroliz kamida 8talik bo'lishi kerak";
-        elText1.classList.add('danger')
+        elText1.classList.add('danger');
+        elPassword.classList.remove("true")
 
     }
-
-
-    else  {
-        elPassword.classList.add('false');
+    else {
+        elPassword.classList.remove('false');
         elText1.textContent = "";
         elPassword.classList.add('true');
-        elText1.classList.remove('danger')
+        elText1.classList.remove('danger');
 
     }
-    if(elPassword2.value != elPassword.value  ) {
+
+
+    if (elPassword2.value != elPassword.value) {
 
         elPassword2.classList.add('false');
-        // elPassword2.style.border = '3px solid #C3A8A3'
         elText2.textContent = "Aka tasdiqlagich paroliz birinchi parol bilan bir xil bo'lishi kerak";
         elText2.style.marginTop = '15px'
         elText2.style.marginLeft = '15px'
         elText2.classList.add('danger')
+        elPassword2.classList.remove('true')
 
     }
 
 
-    else  {
-        elPassword2.classList.add('false');
+    else {
+        elPassword2.classList.remove('false');
         elText2.textContent = "";
-        elPassword2.classList.add('true');
         elText2.classList.remove('danger')
+        elPassword2.classList.add('true');
 
     }
 })
 
-elSpan.addEventListener('click', function(e){
+elSpan.addEventListener('click', function (e) {
     e.preventDefault;
-   elSpan.classList.toggle('none')
+    elSpan.classList.toggle('none')
 })
-elOpen.addEventListener('click', function(e){
+elOpen.addEventListener('click', function (e) {
     e.preventDefault;
-   elOpen.classList.toggle('none1')
+    elOpen.classList.toggle('none1')
 })
 
-elSpan.addEventListener('click', () =>{
-    if (elPassword.type == 'text'){
-        elPassword.type = 'password'} else elPassword.type = 'text'
+elSpan.addEventListener('click', () => {
+    if (elPassword.type == 'text') {
+        elPassword.type = 'password'
+    } else elPassword.type = 'text'
 
 })
-elOpen.addEventListener('click', () =>{
-    if (elPassword2.type == 'text'){
-        elPassword2.type = 'password'}
-        
-        else elPassword2.type = 'text'
+elOpen.addEventListener('click', () => {
+    if (elPassword2.type == 'text') {
+        elPassword2.type = 'password'
+    }
+
+    else elPassword2.type = 'text'
 
 })
