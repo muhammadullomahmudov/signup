@@ -10,6 +10,7 @@ const elText2 = document.querySelector('.text2');
 const elSpan = document.querySelector('.open')
 const elOpen = document.querySelector('.open2')
 const elClose = document.querySelector('.open3')
+// const elClose = document.querySelector('.open2')
 
 
 elForm.addEventListener('submit', function (e) {
@@ -68,4 +69,8 @@ elForm.addEventListener('submit', function (e) {
 elSpan.addEventListener('click', function(e){
     e.preventDefault;
    elSpan.classList.toggle('none')
+})
+elOpen.addEventListener('click', function(e){
+    e.preventDefault;
+   elOpen.classList.toggle('none1')
 })
