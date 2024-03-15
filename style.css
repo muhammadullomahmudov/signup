@@ -7,7 +7,7 @@
 .name {
     width: 250px;
     height: 20px;
-    margin-bottom: -7px;
+    margin-bottom: -35px;
     background-color: white;
     padding: 12px 40px;
     border: 3px solid #AEE1C6;
@@ -16,7 +16,6 @@
 }
 
 .password {
-    margin-bottom: -7px;
     width: 250px;
     height: 20px;
     background-color: white;
@@ -24,6 +23,7 @@
     border: 3px solid #AEE1C6;
     outline: none;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .password2 {
@@ -61,13 +61,14 @@
 .true {
     border: 3px solid #AEE1C6;
 }
+
 .danger {
     color: red;
     font-family: monospace;
     position: relative;
     margin-top: -1px;
     font-size: 12px;
-
+margin-top: 25px;
 
 
     &::before {
@@ -78,5 +79,59 @@
         height: 15px;
         top: -1px;
         left: -17px;
+    }
+}
+
+.open {
+    position: relative;
+    cursor: pointer;
+
+    /* position: relative; */
+    margin-top: -75px;
+    margin-left: 250px;
+
+
+    &&::before {
+        position: absolute;
+        content: "";
+        background-image: url('./eye.svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        top: 6px;
+    }
+
+border: none;
+
+
+
+    margin-bottom: 30px;
+}
+
+.open2 {
+    width: 40px;
+    height: 40px;
+}
+
+.open3 {
+    display: none;
+    margin-top: 6px;
+}
+
+.none {
+    /* display: none; */
+
+
+    position: relative;
+
+
+    &&::before {
+        position: absolute;
+        content: "";
+        background-image: url('./icon2.svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        top: 6px;
     }
 }

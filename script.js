@@ -7,7 +7,9 @@ const elBtn2 = document.querySelector('.btn2');
 const elText = document.querySelector('.text');
 const elText1 = document.querySelector('.text1');
 const elText2 = document.querySelector('.text2');
-
+const elSpan = document.querySelector('.open')
+const elOpen = document.querySelector('.open2')
+const elClose = document.querySelector('.open3')
 
 
 elForm.addEventListener('submit', function (e) {
@@ -61,4 +63,9 @@ elForm.addEventListener('submit', function (e) {
         elText2.classList.remove('danger')
 
     }
+})
+
+elSpan.addEventListener('click', function(e){
+    e.preventDefault;
+   elSpan.classList.toggle('none')
 })
