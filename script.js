@@ -48,6 +48,7 @@ elForm.addEventListener('submit', function (e) {
         elPassword2.classList.add('false');
         elText2.textContent = "Aka tasdiqlagich paroliz birinchi parol bilan bir xil bo'lishi kerak";
         elText2.style.marginTop = '15px'
+        elText2.style.marginLeft = '15px'
         elText2.classList.add('danger')
 
     }
